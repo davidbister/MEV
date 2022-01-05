@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.davidbister</groupId>
+    <artifactId>java_swing_mp3player</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/javazoom/jlayer -->
+        <dependency>
+            <groupId>javazoom</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.soundlibs/basicplayer -->
+        <dependency>
+            <groupId>com.googlecode.soundlibs</groupId>
+            <artifactId>basicplayer</artifactId>
+            <version>3.0.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.googlecode.soundlibs</groupId>
+                    <artifactId>jlayer</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.googlecode.soundlibs</groupId>
+                    <artifactId>mp3spi</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.googlecode.soundlibs</groupId>
+                    <artifactId>tritonus-share</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>tritonus-share</groupId>
+            <artifactId>tritonus-share</artifactId>
+            <version>0.3.7.4</version>
+        </dependency>
+        <dependency>
+            <groupId>slf4j-api</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>mp3spi</groupId>
+            <artifactId>mp3spi</artifactId>
+            <version>1.9.5.4</version>
+        </dependency>
+    </dependencies>
+    
+
+
+    
+</project>
